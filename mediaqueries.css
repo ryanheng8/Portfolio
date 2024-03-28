@@ -1,0 +1,84 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 85vh;
+    margin-bottom: 5rem;
+  }
+  .aboutContainers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #navDesktop {
+    display: none;
+  }
+  #navMobile {
+    display: flex;
+  }
+  #skills,
+  .skillsDetailsContainer {
+    margin-top: 2rem;
+  }
+  #profile,
+  .sectionContainer {
+    display: block;
+  }
+  section,
+  .sectionContainer {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .aboutContainers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .aboutContainers,
+  .contactInfoContainer,
+  .btnContainer {
+    flex-wrap: wrap;
+  }
+  .contactInfoDetails {
+    margin: 0;
+  }
+  .contactInfoDetails p,
+  .navTabs li a {
+    font-size: 1rem;
+  }
+  .skillsSubTitle {
+    font-size: 1.25rem;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .navTabs {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}

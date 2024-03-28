@@ -1,0 +1,375 @@
+/* General page sstyling */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: gray;
+}
+
+/* Button transition */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* Top navigation tabs */
+
+nav,
+.navTabs {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+
+.navTabs {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: gray;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.name:hover {
+  cursor: default;
+}
+
+/* Mobile navigation tabs */
+
+#navMobile {
+  display: none;
+}
+
+.navMobileMenu {
+  position: relative;
+  display: inline-block;
+}
+
+.mobileMenuImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.mobileMenuImage span {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  transition: all 0.3 ease-in-out;
+}
+
+.menuTabs {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menuTabs a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menuTabs li {
+  list-style: none;
+}
+
+.menuTabs.open {
+  max-height: 500px;
+}
+
+.mobileMenuImage.open span:first-child {
+  transform: rotate(45deg) translate(10px, 3px);
+}
+
+.mobileMenuImage.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobileMenuImage.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -3px);
+}
+
+.mobileMenuImage span:first-child {
+  transform: none;
+}
+
+.mobileMenuImage span:first-child {
+  opacity: 1;
+}
+
+.mobileMenuImage span:first-child {
+  transform: none;
+}
+
+/* Sections */
+
+section {
+  padding-top: 5vh;
+  height: 95vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.sectionContainer {
+  display: flex;
+}
+
+/* Profile section */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.tabText {
+  align-self: center;
+  text-align: center;
+}
+
+.tabText p {
+  font-weight: 500;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socialsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* IMAGES */
+
+.image {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* About section */
+
+#about {
+  position: relative;
+}
+
+.aboutContainers {
+  gap: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.aboutDetailsContainer {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutContainers,
+.aboutDetailsContainer {
+  display: flex;
+}
+
+.detailsContainer {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: black 0.1rem solid;
+  text-align: center;
+}
+
+.sectionContainer {
+  gap: 5rem;
+  height: 80%;
+}
+
+/* Skills section */
+
+#skills {
+  position: relative;
+}
+
+.skillsSubTitle {
+  color: black;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.skillsDetailsContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.articleContainer {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 14rem;
+  justify-content: left;
+  gap: 0.5rem;
+}
+
+article .image {
+  cursor: default;
+}
+
+/* Buttons */
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 500;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 10rem;
+  border-radius: 2rem;
+}
+
+.btnColor {
+  border: black 0.1rem solid;
+}
+
+.btnColor:hover {
+  cursor: pointer;
+}
+
+.btnColor {
+  background: white;
+  color: black;
+}
+
+.btnColor:hover {
+  background: black;
+  color: white;
+}
+
+/* Projects section */
+
+#projects {
+  position: relative;
+}
+
+.colorContainer {
+  border-color: black;
+}
+
+.projectsContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: auto;
+  align-items: center;
+}
+
+.projectTitle {
+  margin: 1rem;
+  color: black;
+}
+
+/* Contact Section */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  margin-top: 20rem;
+}
+
+.contactInfoContainer {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: black 0.1rem solid;
+  border-color: black;
+  background: white;
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contactInfoDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contactInfoDetails p {
+  font-size: larger;
+}
+
+.contactImage {
+  cursor: default;
+}
+
+.emailImage {
+  height: 2rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
