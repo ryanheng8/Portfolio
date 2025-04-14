@@ -130,6 +130,7 @@ a:hover {
 /* Sections */
 section {
   padding-top: 5vh;
+  padding-bottom: 5vh;
   height: 95vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -146,6 +147,8 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  margin-top: 2rem;
+  padding-bottom: 40vh;
 }
 
 .tabText {
@@ -187,8 +190,10 @@ section {
 }
 
 .aboutDetailsContainer {
+  display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .aboutContainers,
@@ -199,6 +204,7 @@ section {
 .detailsContainer {
   padding: 1.5rem;
   flex: 1;
+  flex-wrap: wrap;
   background: white;
   border-radius: 2rem;
   border: black 0.1rem solid;
@@ -233,19 +239,25 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: space-around;
 }
 
 article {
   display: flex;
-  width: 14rem;
-  justify-content: left;
+  width: 12rem;
+  justify-content: space-between;
   gap: 0.5rem;
 }
 
 article .image {
   cursor: default;
+  justify-content: right;
+}
+
+.levelContainer {
+  justify-content: flex-end;
+  gap: 0rem;
 }
 
 /* Buttons */

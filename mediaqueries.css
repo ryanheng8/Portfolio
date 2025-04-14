@@ -10,6 +10,7 @@
   #contact,
   #projects {
     height: fit-content;
+    min-width: 500px;
   }
 }
 
