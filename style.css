@@ -230,7 +230,7 @@ section {
 
 .skillsDetailsContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -240,7 +240,7 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 1rem;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 article {
