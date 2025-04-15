@@ -42,6 +42,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  #navMobile {
+    display: flex;
+    justify-content: right;
+    padding-right: 1%
+  }
   #contact,
   footer {
     height: 40vh;
