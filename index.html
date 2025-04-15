@@ -12,10 +12,10 @@
       <div class="name">Ryan Heng's Portfolio</div>
       <div>
         <ul class="navTabs">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" onclick="scrollToSection(event, 'about', 1000)">About</a></li>
+          <li><a href="#skills" onclick="scrollToSection(event, 'skills', 1500)">Skills</a></li>
+          <li><a href="#projects" onclick="scrollToSection(event, 'projects', 2000)">Projects</a></li>
+          <li><a href="#contact" onclick="scrollToSection(event, 'contact', 2000)">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -28,28 +28,28 @@
           <span></span>
         </div>
         <div class="menuTabs">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#about" onclick="scrollToSection(event, 'about', 1000)">About</a></li>
+          <li><a href="#skills" onclick="scrollToSection(event, 'skills', 1500)">Skills</a></li>
+          <li><a href="#projects" onclick="scrollToSection(event, 'projects', 2000)">Projects</a></li>
+          <li><a href="#contact" onclick="scrollToSection(event, 'contact', 2000)">Contact</a></li>
         </div>
       </div>
     </nav>
     <section id="profile">
       <div class="tabText">
         <h1 class="title">Ryan Heng</h1>
-        <p class="tabText__p2">Software and Data Engineer</p>
+        <p class="tabTextP2">Software and Data Engineer</p>
         <div id="socialsContainer">
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn Profile"
-            class="image"
+            class="image scale-hover"
             onclick="location.href='https://linkedin.com/in/ryanheng8/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github Profile"
-            class="image"
+            class="image scale-hover"
             onclick="location.href='https://github.com/ryanheng8/'"
           />
         </div>
@@ -60,7 +60,7 @@
       <div class="sectionContainer">
         <div class="aboutDetailsContainer">
           <div class="aboutContainers">
-            <div class="detailsContainer">
+            <div class="detailsContainer left">
               <h2>Education</h2>
               <br />
               <h3>The Ohio State University, College of Engineering</h3>
@@ -72,7 +72,7 @@
               <br />
               <img src="./assets/osu.png" alt="OSU Logo" class="name" />
             </div>
-            <div class="detailsContainer">
+            <div class="detailsContainer right">
               <h2>Interests</h2>
               <br />
               <h3>Web Application Development</h3>
@@ -113,7 +113,7 @@
       <div class="sectionContainer">
         <div class="skillsDetailsContainer">
           <div class="aboutContainers">
-            <div class="detailsContainer">
+            <div class="detailsContainer first">
               <h2 class="skillsSubTitle">Web Applications</h2>
                 <div class="articleContainer">
                   <article>
@@ -183,7 +183,7 @@
                   </article>
                 </div>
               </div>
-            <div class="detailsContainer">
+            <div class="detailsContainer second">
               <h2 class="skillsSubTitle">Mobile Applications</h2>
                 <div class="articleContainer">
                   <article>
@@ -227,7 +227,7 @@
                   </article>
                 </div>
               </div>
-            <div class="detailsContainer">
+            <div class="detailsContainer third">
             <h2 class="skillsSubTitle">Data Engineering</h2>
               <div class="articleContainer">
                 <article>
@@ -424,7 +424,7 @@
     </section>
     <section id="contact">
       <h1 class="title">Contacts</h1>
-      <div class="contactInfoContainer">
+      <div class="contactInfoContainer up">
         <div class="contactInfoDetails">
           <img
             src="./assets/email.png"
@@ -448,10 +448,10 @@
       <nav>
         <div class="navTabsContainer">
           <ul class="navTabs">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" onclick="scrollToSection(event, 'about', 1000)">About</a></li>
+            <li><a href="#skills" onclick="scrollToSection(event, 'skills', 1500)">Skills</a></li>
+            <li><a href="#projects" onclick="scrollToSection(event, 'projects', 2000)">Projects</a></li>
+            <li><a href="#contact" onclick="scrollToSection(event, 'contact', 2000)">Contact</a></li>
           </ul>
         </div>
       </nav>

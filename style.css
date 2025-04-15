@@ -9,7 +9,7 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 p {
@@ -160,9 +160,26 @@ section {
   font-weight: 500;
 }
 
+/* When the container becomes visible */
+.tabTextP2.visible {
+  opacity: 1;
+}
+
+/* When the container becomes hidden */
+.tabTextP2.hidden {
+  opacity: 0;
+}
+
 .title {
   font-size: 3rem;
   text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.6s ease;
+}
+
+/* When the container becomes visible */
+.title.visible {
+  opacity: 1;
 }
 
 #socialsContainer {
@@ -172,10 +189,29 @@ section {
   gap: 1rem;
 }
 
+/* When the container becomes visible */
+#socialsContainer.visible {
+  opacity: 1;
+}
+
+/* When the container becomes hidden */
+#socialsContainer.hidden {
+  opacity: 0;
+}
+
+
 /* Images */
 .image {
   cursor: pointer;
   height: 2rem;
+}
+
+.image.scale-hover {
+  transition: transform 0.3s ease;
+}
+
+.image.scale-hover:hover {
+  transform: scale(1.15);
 }
 
 /* About section */
@@ -209,6 +245,39 @@ section {
   border-radius: 2rem;
   border: black 0.1rem solid;
   text-align: center;
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Slide-in from the left */
+.detailsContainer.left {
+  transform: translateX(-150px);
+}
+
+/* Slide-in from the right */
+.detailsContainer.right {
+  transform: translateX(150px);
+}
+
+/* Slide-in to the first spot */
+.detailsContainer.first {
+  transform: translateX(-200px);
+}
+
+/* Slide-in to the second spot */
+.detailsContainer.second {
+  transform: translateX(-250px);
+}
+
+/* Slide-in to the third spot */
+.detailsContainer.third {
+  transform: translateX(-300px);
+}
+
+/* When the container becomes visible */
+.detailsContainer.visible {
+  opacity: 1;
+  transform: translateX(0) translateY(0); /* Reset transform to the default position */
 }
 
 .sectionContainer {
@@ -279,6 +348,10 @@ article .image {
   border: black 0.1rem solid;
 }
 
+.btn:hover {
+  transform: scale(1.1);
+}
+
 .btnColor:hover {
   cursor: pointer;
 }
@@ -333,6 +406,25 @@ article .image {
   background: white;
   margin: 2rem auto;
   padding: 0.5rem;
+  opacity: 0;
+}
+
+.contactInfoContainer.up {
+  transform: translateY(-50px);
+  transform: translateX(0) translateY(0); /* Reset transform to the default position */
+}
+
+/* When the container becomes visible */
+.contactInfoContainer.visible {
+  opacity: 1;
+  transition: all 0.6s ease-out;
+}
+
+/* Start hidden and down below */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px); /* Start 50px below */
+  transition: all 0.6s ease-out;
 }
 
 .contactInfoDetails {
