@@ -1,4 +1,3 @@
-/* Mobile styles for screens less than 1400px */
 @media screen and (max-width: 1400px) {
   #profile {
     height: 85vh;
@@ -10,11 +9,9 @@
   #contact,
   #projects {
     height: fit-content;
-    min-width: 500px;
   }
 }
 
-/* Mobile styles for screens less than 1200px */
 @media screen and (max-width: 1200px) {
   #navDesktop {
     display: none;
@@ -42,7 +39,6 @@
   }
 }
 
-/* Mobile styles for screens less than 600px */
 @media screen and (max-width: 600px) {
   #contact,
   footer {

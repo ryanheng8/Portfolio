@@ -134,7 +134,6 @@ section {
   height: 95vh;
   margin: 0 10rem;
   box-sizing: border-box;
-  min-height: 100vh; /* added min-height for consistency */
 }
 
 .sectionContainer {
@@ -251,27 +250,27 @@ section {
 
 /* Slide-in from the left */
 .detailsContainer.left {
-  transform: translateX(-150px);
+  transform: translateX(-100px);
 }
 
 /* Slide-in from the right */
 .detailsContainer.right {
-  transform: translateX(150px);
+  transform: translateX(100px);
 }
 
 /* Slide-in to the first spot */
 .detailsContainer.first {
-  transform: translateX(-200px);
+  transform: translateX(-50px);
 }
 
 /* Slide-in to the second spot */
 .detailsContainer.second {
-  transform: translateX(-250px);
+  transform: translateX(-75px);
 }
 
 /* Slide-in to the third spot */
 .detailsContainer.third {
-  transform: translateX(-300px);
+  transform: translateX(-100px);
 }
 
 /* When the container becomes visible */
@@ -452,3 +451,4 @@ footer {
   height: 26vh;
   margin: 0 1rem;
 }
+
