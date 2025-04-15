@@ -18,6 +18,8 @@
   }
   #navMobile {
     display: flex;
+    justify-content: right;
+    padding-right: 1%
   }
   #skills,
   .skillsDetailsContainer {

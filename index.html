@@ -9,7 +9,6 @@
   </head>
   <body>
     <nav id="navDesktop">
-      <div class="name">Ryan Heng's Portfolio</div>
       <div>
         <ul class="navTabs">
           <li><a href="#about" onclick="scrollToSection(event, 'about', 1000)">About</a></li>
@@ -20,7 +19,6 @@
       </div>
     </nav>
     <nav id="navMobile">
-      <div class="name">Ryan Heng's Portfolio</div>
       <div class="navMobileMenu">
         <div class="mobileMenuImage" onclick="toggleMenu()">
           <span></span>
@@ -38,6 +36,7 @@
     <section id="profile">
       <div class="tabText">
         <h1 class="title">Ryan Heng</h1>
+        <br />
         <p class="tabTextP2">Software and Data Engineer</p>
         <div id="socialsContainer">
           <img
@@ -57,6 +56,7 @@
     </section>
     <section id="about">
       <h1 class="title">About Me</h1>
+      <br />
       <div class="sectionContainer">
         <div class="aboutDetailsContainer">
           <div class="aboutContainers">
@@ -108,7 +108,6 @@
     </section>
     <section id="skills">
       <h1 class="title">Skills</h1>
-      <br />
       <br />
       <div class="sectionContainer">
         <div class="skillsDetailsContainer">
@@ -316,6 +315,7 @@
     </section>
     <section id="projects">
       <h1 class="title">Projects</h1>
+      <br />
       <div class="sectionContainer">
         <div class="projectsContainer">
           <div class="aboutContainers">
@@ -397,7 +397,6 @@
             </div>
           </div>
           <div class="aboutContainers">
-            <div class="contactsContainer">
               <div class="detailsContainer colorContainer">
                 <h2 class="skillsSubTitle projectTitle">
                   Core Language Interpreter
@@ -415,9 +414,27 @@
                   >
                     GitHub
                   </button>
-                </div>
               </div>
             </div>
+            <div class="detailsContainer colorContainer">
+              <h2 class="skillsSubTitle projectTitle">
+                Portfolio Website
+              </h2>
+              <br />
+              <p>
+                Designed and created this porfolio website to showcase information about me,
+                my skills, and my projects.
+              </p>
+              <br />
+              <div class="btnContainer">
+                <button
+                  class="btn btnColor projectBtn"
+                  onclick="location.href='https://github.com/ryanheng8/Portfolio'"
+                >
+                  GitHub
+                </button>
+            </div>
+          </div>
           </div>
         </div>
       </div>
