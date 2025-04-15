@@ -290,6 +290,10 @@ section {
   transform: translateX(0) translateY(0); /* Reset transform to the default position */
 }
 
+.detailsContainer:hover {
+  box-shadow: 0 4px 12px #dcdcdc;
+}
+
 .sectionContainer {
   gap: 5rem;
   height: 80%;
@@ -422,6 +426,10 @@ article .image {
 .contactInfoContainer.visible {
   opacity: 1;
   transition: all 0.6s ease-out;
+}
+
+.contactInfoContainer:hover {
+  box-shadow: 0 4px 12px #dcdcdc;
 }
 
 /* Start hidden and down below */
