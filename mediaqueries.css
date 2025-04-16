@@ -13,7 +13,8 @@
 }
 
 @media screen and (max-width: 1200px) {
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
     max-width: 1200px;
   }
@@ -24,7 +25,7 @@
   #navMobile {
     display: flex;
     justify-content: right;
-    padding-right: 3%
+    padding-right: 3%;
   }
   #skills,
   .skillsDetailsContainer {
@@ -33,7 +34,7 @@
   #profile,
   .sectionContainer {
     display: block;
-    margin-top: 20vh
+    margin-top: 20vh;
   }
   section,
   .sectionContainer {
@@ -54,7 +55,8 @@
 }
 
 @media screen and (max-width: 600px) {
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
     max-width: 600px;
   }
@@ -62,7 +64,7 @@
   #navMobile {
     display: flex;
     justify-content: right;
-    padding-right: 3%
+    padding-right: 3%;
   }
   #contact,
   footer {
@@ -71,7 +73,7 @@
   #profile {
     height: 83vh;
     margin-bottom: 0;
-    margin-top: 20vh
+    margin-top: 20vh;
   }
   article {
     font-size: 1rem;
@@ -89,7 +91,7 @@
   .btnContainer {
     flex-wrap: wrap;
   }
-  
+
   .contactInfoDetails {
     margin: 0;
   }

@@ -6,7 +6,10 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f3ead7
+  background: linear-gradient(to bottom, #f3ead7, #f6e4c4);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 html {
@@ -101,7 +104,8 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #f3ead7;
+  background: linear-gradient(to bottom, #f3ead7, #f6e4c4);
+  background-attachment: fixed;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -209,7 +213,6 @@ section {
   opacity: 0;
 }
 
-
 /* Images */
 .image {
   cursor: pointer;
@@ -264,9 +267,19 @@ section {
   transform: translateX(-100px);
 }
 
+/* Slide-in from the left */
+.detailsContainer.leftSmall {
+  transform: translateX(-25px);
+}
+
 /* Slide-in from the right */
 .detailsContainer.right {
   transform: translateX(100px);
+}
+
+/* Slide-in from the right */
+.detailsContainer.rightSmall {
+  transform: translateX(25px);
 }
 
 /* Slide-in to the first spot */
@@ -287,11 +300,11 @@ section {
 /* When the container becomes visible */
 .detailsContainer.visible {
   opacity: 1;
-  transform: translateX(0) translateY(0); /* Reset transform to the default position */
+  transform: translateX(0); /* Reset transform to the default position */
 }
 
 .detailsContainer:hover {
-  box-shadow: 0 2px 6px #d1c6b1
+  box-shadow: 0 2px 6px #d1c6b1;
 }
 
 .sectionContainer {
@@ -417,11 +430,6 @@ article .image {
   opacity: 0;
 }
 
-.contactInfoContainer.up {
-  transform: translateY(-50px);
-  transform: translateX(0) translateY(0); /* Reset transform to the default position */
-}
-
 /* When the container becomes visible */
 .contactInfoContainer.visible {
   opacity: 1;
@@ -435,7 +443,6 @@ article .image {
 /* Start hidden and down below */
 .hidden {
   opacity: 0;
-  transform: translateY(50px); /* Start 50px below */
   transition: all 0.6s ease-out;
 }
 
