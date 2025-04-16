@@ -13,13 +13,18 @@
 }
 
 @media screen and (max-width: 1200px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 1200px;
+  }
+
   #navDesktop {
     display: none;
   }
   #navMobile {
     display: flex;
     justify-content: right;
-    padding-right: 1%
+    padding-right: 3%
   }
   #skills,
   .skillsDetailsContainer {
@@ -28,6 +33,7 @@
   #profile,
   .sectionContainer {
     display: block;
+    margin-top: 20vh
   }
   section,
   .sectionContainer {
@@ -37,15 +43,26 @@
     margin: 0 5%;
   }
   .aboutContainers {
-    margin-top: 0;
+    flex-wrap: wrap;
+    position: relative;
+    top: -20vh;
+  }
+
+  .btnContainer {
+    flex-wrap: wrap;
   }
 }
 
 @media screen and (max-width: 600px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 600px;
+  }
+
   #navMobile {
     display: flex;
     justify-content: right;
-    padding-right: 1%
+    padding-right: 3%
   }
   #contact,
   footer {
@@ -54,6 +71,7 @@
   #profile {
     height: 83vh;
     margin-bottom: 0;
+    margin-top: 20vh
   }
   article {
     font-size: 1rem;
@@ -62,17 +80,26 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
-  .aboutContainers,
-  .contactInfoContainer,
+  .aboutContainers {
+    flex-wrap: wrap;
+    position: relative;
+    top: -20vh;
+  }
+
   .btnContainer {
     flex-wrap: wrap;
   }
+  
   .contactInfoDetails {
     margin: 0;
   }
   .contactInfoDetails p,
   .navTabs li a {
     font-size: 1rem;
+  }
+
+  .contactInfoContainer {
+    flex-wrap: wrap;
   }
   .skillsSubTitle {
     font-size: 1.25rem;

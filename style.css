@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f3ead7
 }
 
 html {
@@ -14,11 +14,11 @@ html {
 }
 
 header {
-  color: #333333;
+  color: #2c2c2c;
 }
 
 p {
-  color: #555555;
+  color: #3a3a3a;
 }
 
 /* Button transition */
@@ -46,12 +46,12 @@ nav {
 }
 
 a {
-  color: #333333;
+  color: #3a3a3a;
   text-decoration: none;
 }
 
 a:hover {
-  color: #555555;
+  color: #2c2c2c;
 }
 
 .pageMenu {
@@ -93,7 +93,7 @@ a:hover {
 .mobileMenuImage span {
   width: 100%;
   height: 2px;
-  background-color: #333333;
+  background-color: #2c2c2c;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -101,7 +101,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #f4f4f4;
+  background-color: #f3ead7;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -113,7 +113,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: #333333;
+  color: #2c2c2c;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
@@ -251,9 +251,9 @@ section {
   padding: 1.5rem;
   flex: 1;
   flex-wrap: wrap;
-  background: #ffffff;
+  background: #fef8e8;
   border-radius: 2rem;
-  border: #dcdcdc 0.1rem solid;
+  border: #d1c6b1 0.1rem solid;
   text-align: center;
   opacity: 0;
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -291,7 +291,7 @@ section {
 }
 
 .detailsContainer:hover {
-  box-shadow: 0 4px 12px #dcdcdc;
+  box-shadow: 0 2px 6px #d1c6b1
 }
 
 .sectionContainer {
@@ -305,7 +305,7 @@ section {
 }
 
 .skillsSubTitle {
-  color: #333333;
+  color: #2c2c2c;
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -359,9 +359,9 @@ article .image {
 }
 
 .btnColor {
-  border: #dcdcdc 0.1rem solid;
-  background: #ffffff;
-  color: #333333;
+  border: #d1c6b1 0.1rem solid;
+  background: #fef8e8;
+  color: #3a3a3a;
 }
 
 .btn:hover {
@@ -370,8 +370,8 @@ article .image {
 
 .btnColor:hover {
   cursor: pointer;
-  background: #555555;
-  color: #ffffff;
+  background: #f3ead7;
+  color: #2c2c2c;
 }
 
 /* Projects section */
@@ -380,7 +380,7 @@ article .image {
 }
 
 .colorContainer {
-  border-color: #dcdcdc;
+  border-color: #d1c6b1;
 }
 
 .projectsContainer {
@@ -393,7 +393,7 @@ article .image {
 
 .projectTitle {
   margin: 1rem;
-  color: #333333;
+  color: #2c2c2c;
 }
 
 /* Contact Section */
@@ -410,8 +410,8 @@ article .image {
   justify-content: center;
   border-radius: 2rem;
   border: 0.1rem solid;
-  border-color: #dcdcdc;
-  background: #ffffff;
+  border-color: #d1c6b1;
+  background: #fef8e8;
   margin: 2rem auto;
   padding: 0.5rem;
   opacity: 0;
@@ -429,7 +429,7 @@ article .image {
 }
 
 .contactInfoContainer:hover {
-  box-shadow: 0 4px 12px #dcdcdc;
+  box-shadow: 0 4px 12px #d1c6b1;
 }
 
 /* Start hidden and down below */
@@ -473,4 +473,3 @@ footer {
   height: 26vh;
   margin: 0 1rem;
 }
-
