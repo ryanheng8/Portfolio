@@ -51,7 +51,7 @@ function scrollToSection(event, sectionId, duration) {
 
 // Select all containers to animate
 const containers = document.querySelectorAll(
-  ".name, .navTabs, .detailsContainer, .contactInfoContainer, #socialsContainer"
+  ".name, .detailsContainer, .contactInfoContainer"
 );
 
 // Intersection Observer to detect when the container is in view or out of view
@@ -70,7 +70,7 @@ const observerContainers = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.5, // Trigger when 50% of the element is in view
+    threshold: 0.3, // Trigger when 30% of the element is in view
   }
 );
 
@@ -80,7 +80,9 @@ containers.forEach((container) => {
 });
 
 // Select all headers to animate
-const headers = document.querySelectorAll(".title, .tabTextP2");
+const headers = document.querySelectorAll(
+  ".navTabs, .title, .tabTextP2, .socialsContainer"
+);
 
 // Intersection Observer to detect when the container is in view or out of view
 const observerHeaders = new IntersectionObserver(

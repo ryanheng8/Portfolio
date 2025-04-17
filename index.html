@@ -37,10 +37,10 @@
           </li>
           <li>
             <a
-              href="#contact"
+              href="#contacts"
               class="pageMenu"
-              onclick="scrollToSection(event, 'contact', 2000)"
-              >Contact</a
+              onclick="scrollToSection(event, 'contacts', 2000)"
+              >Contacts</a
             >
           </li>
         </ul>
@@ -80,10 +80,10 @@
           </li>
           <li>
             <a
-              href="#contact"
+              href="#contacts"
               class="pageMenu"
-              onclick="scrollToSection(event, 'contact', 2000)"
-              >Contact</a
+              onclick="scrollToSection(event, 'contacts', 2000)"
+              >Contacts</a
             >
           </li>
         </div>
@@ -94,7 +94,7 @@
         <h1 class="title">Ryan Heng</h1>
         <br />
         <p class="tabTextP2">Software and Data Engineer</p>
-        <div id="socialsContainer">
+        <div class="socialsContainer">
           <a
             href="https://linkedin.com/in/ryanheng8"
             target="_blank"
@@ -145,9 +145,9 @@
               <br />
               <p>
                 I am interested in Front-End, Back-End, and Full-Stack web
-                development. I want to learn more about using React, Bootstrap,
-                Django, Next.js, and Ruby on Rails to develop robust, engaging,
-                scalable enterprise web applications.
+                development. I want to learn more about using React, Angular,
+                Bootstrap, Django, Node.js, Spring Boot and Ruby on Rails to
+                develop robust, engaging, scalable enterprise web applications.
               </p>
               <br />
               <br />
@@ -166,9 +166,8 @@
               <p>
                 I am interested in both data engineering and analytics. I want
                 to learn more about ETL processes and using data visualization
-                software such as Tableau, Alteryx, and Power BI to transform raw
-                data into actionable insights, enabling data-driven
-                decision-making and improving business outcomes.
+                software such as Tableau, Alteryx, Azure, and Power BI to
+                transform raw data into actionable insights.
               </p>
             </div>
           </div>
@@ -177,7 +176,6 @@
     </section>
     <section id="skills">
       <h1 class="title">Skills</h1>
-      <br />
       <div class="sectionContainer">
         <div class="skillsDetailsContainer">
           <div class="aboutContainers">
@@ -388,155 +386,99 @@
       <div class="sectionContainer">
         <div class="projectsContainer">
           <div class="aboutContainers">
-            <div class="detailsContainer colorContainer leftSmall">
-              <h2 class="skillsSubTitle projectTitle">Bluetooth Messenger</h2>
-              <p>
-                Developed a reliable Android messaging application that allows
-                users to communicate with each other offline through Bluetooth.
-                Includes online features such as syncing user profiles,
-                retrieving messaging history, and creating fun drawings.
-              </p>
-              <br />
-              <div class="btnContainer">
-                <button
-                  class="btn btnColor projectBtn"
-                  onclick="window.open('https://github.com/ryanheng8/BluetoothMessenger', '_blank', 'noopener,noreferrer')"
-                >
-                  GitHub
-                </button>
+            <a href="course-catalog.html" class="projectBtn">
+              <div class="detailsContainer leftSmall">
+                <h2 class="skillsSubTitle projectTitle">Course Catalog</h2>
+                <div
+                  class="projectImageContainer"
+                  style="background-image: url('assets/courseCatalog.png')"
+                ></div>
               </div>
-            </div>
-            <div class="detailsContainer colorContainer rightSmall">
-              <h2 class="skillsSubTitle projectTitle">Course Catalog</h2>
-              <br />
-              <p>
-                Created a comprehensive, renovative course catalog for The Ohio
-                State University. Includes applications for students to become
-                TA’s, instructors to leave reviews, and automatic grader
-                assignment for each class schedule.
-              </p>
-              <br />
-              <div class="btnContainer">
-                <button
-                  class="btn btnColor projectBtn"
-                  onclick="window.open('https://github.com/ryanheng8/CourseCatalog', '_blank', 'noopener,noreferrer')"
-                >
-                  GitHub
-                </button>
-              </div>
-            </div>
+            </a>
+            <a href="bluetooth-messenger.html" class="projectBtn">
+              <div class="detailsContainer rightSmall">
+                <h2 class="skillsSubTitle projectTitle">Bluetooth Messenger</h2>
+                <div
+                  class="projectImageContainer"
+                  style="background-image: url('assets/bluetoothMessenger.png')"
+                ></div></div
+            ></a>
           </div>
           <div class="aboutContainers">
-            <div class="detailsContainer colorContainer leftSmall">
-              <h2 class="skillsSubTitle projectTitle">Set Card Game</h2>
-              <br />
-              <p>
-                Developed a challenging card game where users are tasked to find
-                sets in a given board. I have implemented various CPU difficulty
-                levels as well as hints that gradually reveal the correct
-                solution to the user.
-              </p>
-              <br />
-              <div class="btnContainer">
-                <button
-                  class="btn btnColor projectBtn"
-                  onclick="window.open('https://github.com/ryanheng8/SetCardGame', '_blank', 'noopener,noreferrer')"
-                >
-                  GitHub
-                </button>
-              </div>
-            </div>
-            <div class="detailsContainer colorContainer rightSmall">
-              <h2 class="skillsSubTitle projectTitle">Inventory Manager</h2>
-              <br />
-              <p>
-                Created a robust inventory management system to keep track of
-                the current stock of every item as well as calculating the
-                sales, revenue, and investment of various categorizable items.
-              </p>
-              <br />
-              <div class="btnContainer">
-                <button
-                  class="btn btnColor projectBtn"
-                  onclick="window.open('https://github.com/ryanheng8/InventoryManager', '_blank', 'noopener,noreferrer')"
-                >
-                  GitHub
-                </button>
-              </div>
-            </div>
+            <a href="set-card-game.html" class="projectBtn"
+              ><div class="detailsContainer leftSmall">
+                <h2 class="skillsSubTitle projectTitle">Set Card Game</h2>
+                <div
+                  class="projectImageContainer"
+                  style="background-image: url('assets/setCardGame.png')"
+                ></div></div
+            ></a>
+            <a href="inventory-manager.html" class="projectBtn">
+              <div class="detailsContainer rightSmall">
+                <h2 class="skillsSubTitle projectTitle">Inventory Manager</h2>
+                <div
+                  class="projectImageContainer"
+                  style="background-image: url('assets/inventoryManager.png')"
+                ></div></div
+            ></a>
           </div>
           <div class="aboutContainers">
-            <div class="detailsContainer colorContainer leftSmall">
-              <h2 class="skillsSubTitle projectTitle">
-                Core Language Interpreter
-              </h2>
-              <br />
-              <p>
-                Designed and implemented a scanner, parser, interpreter, and
-                garbage collector for the Core programming language.
-              </p>
-              <br />
-              <div class="btnContainer">
-                <button
-                  class="btn btnColor projectBtn"
-                  onclick="window.open('https://github.com/ryanheng8/Interpreter', '_blank', 'noopener,noreferrer')"
-                >
-                  GitHub
-                </button>
+            <a href="portfolio-website.html" class="projectBtn"
+              ><div class="detailsContainer leftSmall">
+                <h2 class="skillsSubTitle projectTitle">Portfolio Website</h2>
+                <div
+                  class="projectImageContainer"
+                  style="background-image: url('assets/portfolioImage.png')"
+                ></div></div
+            ></a>
+            <a href="core-language-interpreter.html" class="projectBtn"
+              ><div class="detailsContainer rightSmall">
+                <h2 class="skillsSubTitle projectTitle">
+                  Core Language Interpreter
+                </h2>
+                <div
+                  class="projectImageContainer"
+                  style="background-image: url('assets/interpreter.png')"
+                ></div>
               </div>
-            </div>
-            <div class="detailsContainer colorContainer rightSmall">
-              <h2 class="skillsSubTitle projectTitle">Portfolio Website</h2>
-              <br />
-              <p>
-                Designed and created this porfolio website to showcase
-                information about me, my skills, and my projects.
-              </p>
-              <br />
-              <div class="btnContainer">
-                <button
-                  class="btn btnColor projectBtn"
-                  onclick="window.open('https://github.com/ryanheng8/Portfolio', '_blank', 'noopener,noreferrer')"
-                >
-                  GitHub
-                </button>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <section id="contact">
+    <section id="contacts">
       <h1 class="title">Contacts</h1>
-      <div class="contactInfoContainer up">
-        <div class="contactInfoDetails">
-          <img
-            src="./assets/email.png"
-            alt="Email image"
-            class="image contactImage emailImage"
-          />
-          <p>
-            <a href="mailto:ryanheng8@outlook.com" class="textLink"
-              >ryanheng8@outlook.com</a
-            >
-          </p>
-          <br />
-        </div>
-        <div class="contactInfoDetails">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn image"
-            class="image contactImage"
-          />
-          <p>
-            <a
-              href="https://linkedin.com/in/ryanheng8/"
-              class="textLink"
-              target="_blank"
-              rel="noopener noreferrer"
-              >in/ryanheng8</a
-            >
-          </p>
+      <div class="contactContainer">
+        <div class="contactInfoContainer">
+          <div class="contactInfoDetails">
+            <img
+              src="./assets/email.png"
+              alt="Email image"
+              class="image contactImage emailImage"
+            />
+            <p>
+              <a href="mailto:ryanheng8@outlook.com" class="textLink"
+                >ryanheng8@outlook.com</a
+              >
+            </p>
+            <br />
+          </div>
+          <div class="contactInfoDetails">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn image"
+              class="image contactImage"
+            />
+            <p>
+              <a
+                href="https://linkedin.com/in/ryanheng8/"
+                class="textLink"
+                target="_blank"
+                rel="noopener noreferrer"
+                >in/ryanheng8</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -570,10 +512,10 @@
             </li>
             <li>
               <a
-                href="#contact"
+                href="#contacts"
                 class="pageMenu"
-                onclick="scrollToSection(event, 'contact', 1000)"
-                >Contact</a
+                onclick="scrollToSection(event, 'contacts', 1000)"
+                >Contacts</a
               >
             </li>
           </ul>

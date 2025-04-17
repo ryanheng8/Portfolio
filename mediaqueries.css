@@ -1,22 +1,8 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 85vh;
-    margin-bottom: 5rem;
-  }
-  .aboutContainers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
-  }
-}
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 599px) {
   html,
   body {
     overflow-x: hidden;
-    max-width: 1200px;
+    max-width: 599px;
   }
 
   #navDesktop {
@@ -27,10 +13,151 @@
     justify-content: right;
     padding-right: 3%;
   }
+
+  #navMobile a {
+    font-size: 1rem;
+  }
+
   #skills,
   .skillsDetailsContainer {
     margin-top: 2rem;
   }
+
+  #profile,
+  .sectionContainer {
+    display: block;
+    margin-top: 20vh;
+  }
+  section,
+  .sectionContainer {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+
+  .aboutContainers {
+    flex-wrap: wrap;
+    position: relative;
+    top: -20vh;
+  }
+
+  .detailsContainer.right,
+  .detailsContainer.left {
+    transform: translateX(-50px);
+  }
+
+  .detailsContainer.rightSmall {
+    transform: translateX(-25px);
+    margin-bottom: 1rem;
+  }
+
+  .detailsContainer.leftSmall {
+    margin-top: 1rem;
+  }
+
+  .detailsContainer.visible {
+    opacity: 1;
+    transform: translateX(0); /* Reset transform to the default position */
+  }
+
+  .projectImageContainer {
+    width: 18rem;
+  }
+
+  .contactContainer {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.8);
+    padding: 0;
+    margin: 0;
+  }
+
+  .contactInfoDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+
+  .navTabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .backBtn {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .backBtn span {
+    display: none;
+  }
+
+  .projectPage {
+    font-size: 2rem;
+  }
+
+  .singleProjectContainer {
+    margin-top: 1rem;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .projectImage,
+  .projectFacts {
+    width: 85%;
+  }
+
+  .projectFacts {
+    margin-bottom: 2rem;
+  }
+
+  .projectImage img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 999px;
+  }
+
+  #navDesktop {
+    display: none;
+  }
+  #navMobile {
+    display: flex;
+    justify-content: right;
+    padding-right: 3%;
+  }
+
+  #navMobile a {
+    font-size: 1.25rem;
+  }
+
+  #skills,
+  .skillsDetailsContainer {
+    margin-top: 2rem;
+  }
+
   #profile,
   .sectionContainer {
     display: block;
@@ -49,72 +176,206 @@
     top: -20vh;
   }
 
-  .btnContainer {
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  html,
-  body {
-    overflow-x: hidden;
-    max-width: 600px;
+  .detailsContainer.rightSmall {
+    transform: translateX(-25px);
+    margin-bottom: 1rem;
   }
 
-  #navMobile {
-    display: flex;
-    justify-content: right;
-    padding-right: 3%;
-  }
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-    margin-top: 20vh;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .aboutContainers {
-    flex-wrap: wrap;
-    position: relative;
-    top: -20vh;
+  .detailsContainer.leftSmall {
+    margin-top: 1rem;
   }
 
-  .btnContainer {
-    flex-wrap: wrap;
-  }
-
-  .contactInfoDetails {
-    margin: 0;
-  }
-  .contactInfoDetails p,
-  .navTabs li a {
-    font-size: 1rem;
+  .detailsContainer.visible {
+    opacity: 1;
+    transform: translateX(0); /* Reset transform to the default position */
   }
 
   .contactInfoContainer {
-    flex-wrap: wrap;
+    transform: scale(0.8);
   }
-  .skillsSubTitle {
+
+  .navTabs {
     font-size: 1.25rem;
   }
-  .name {
+
+  .backBtn {
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .backBtn span {
+    display: none;
+  }
+
+  .projectPage {
+    font-size: 2rem;
+  }
+
+  .singleProjectContainer {
+    margin-top: 1rem;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .projectImage,
+  .projectFacts {
+    width: 85%;
+  }
+
+  .projectFacts {
+    margin-bottom: 2rem;
+  }
+
+  .projectImage img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+  #about,
+  #skills {
+    height: 100vh;
+  }
+  .aboutDetailsContainer {
+    min-width: 900px;
+    margin-top: 2rem;
+  }
+  .projectImageContainer {
+    width: 26rem;
+  }
+
+  .backBtn {
+    left: 1.5rem;
+  }
+}
+
+/* Default size for laptops and desktops built in*/
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  #about,
+  #skills {
+    height: 100vh;
+  }
+
+  .aboutDetailsContainer {
+    margin-top: 2rem;
+  }
+}
+
+/* Made for larger screen desktops */
+@media screen and (min-width: 1600px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
     font-size: 1.5rem;
   }
-  .navTabs {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+
+  p {
+    font-size: 1.25rem;
   }
-  .title {
+
+  .navTabs {
     font-size: 2rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .tabTextP2 {
+    font-size: 1.5rem;
+  }
+
+  .socialsContainer {
+    transform: scale(1.35);
+  }
+
+  #about,
+  #skills {
+    height: 100vh;
+  }
+
+  .aboutDetailsContainer {
+    margin-top: 4rem;
+  }
+
+  .aboutContainers {
+    max-width: 1450px;
+    transform: scale(1.1);
+  }
+
+  .skillsSubTitle {
+    font-size: 2rem;
+  }
+
+  .skillsDetailsContainer {
+    margin-top: 6rem;
+  }
+
+  .levelContainer {
+    transform: scale(1.1);
+  }
+
+  article {
+    min-width: 275px;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Slide-in to the first spot */
+  .detailsContainer.first {
+    transform: translateX(-75px);
+  }
+
+  /* Slide-in to the second spot */
+  .detailsContainer.second {
+    transform: translateX(-100px);
+  }
+
+  /* Slide-in to the third spot */
+  .detailsContainer.third {
+    transform: translateX(-125px);
+  }
+
+  /* When the container becomes visible */
+  .detailsContainer.visible {
+    opacity: 1;
+    transform: translateX(0); /* Reset transform to the default position */
+  }
+
+  .leftSmall,
+  .rightSmall {
+    margin-top: 3rem;
+  }
+
+  .projectImageContainer {
+    width: 38rem;
+  }
+
+  .contactInfoContainer {
+    transform: scale(1.35);
+  }
+
+  .backBtn {
+    top: 5rem;
+    left: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .projectPage {
+    margin-top: 5rem;
+  }
+
+  .singleProjectContainer {
+    gap: 3rem;
+  }
+
+  .projectImage {
+    width: 850px;
   }
 }
